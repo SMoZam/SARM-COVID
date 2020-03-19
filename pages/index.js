@@ -351,6 +351,9 @@ margin: 0 10%;
 display: flex;
 justify-content: space-between;
 padding: 50px 0;
+@media (max-width: 768px){
+  flex-direction: column;
+}
 `
 
 const ImagePartenaire = styled.img``
