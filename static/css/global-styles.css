@@ -1,0 +1,29 @@
+@font-face {
+    font-family: AvenirNext;
+    src: url(/static/fonts/AvenirNextLTPro-Bold.otf) format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+html {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-left: -8px;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    --dark-grey: #333333;
+    --off-white: #f7f5f0;
+    --pastel-red: #f6443d;
+    --military-green: #6e7847;
+    --mango: #feb523;
+    --dark-blue-grey: #143931;
+    --camo: #849055;
+    --blue: #0343d5;
+    --cement: #989993;
+    --bleu-officiel: #096aa8;
+}
