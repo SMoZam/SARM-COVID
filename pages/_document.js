@@ -53,10 +53,20 @@ export default class MyDocument extends Document {
           />
 
         </Head>
+
+        <Head>
+
+          <title>SARM - Service d'aide à la répartition médicale</title>
+          <meta name="description" content='Service daide à la répartition médicale' />
+          <meta property="og:title" content='SARM' />
+          <meta property="og:description" content='Service daide à la répartition médicale' />
+          {/* <meta property="og:image" content={ogImage && ogImage.url} /> */}
+          {/* <meta property="og:image:alt" content={ogImage && ogImage.alt} /> */}
+          {/* <meta property="og:url" content={ogUrl} /> */}
+        </Head>
+
+
         <body>
-
-          <title>WAYN-COVID19: Where Are You Needed.</title>
-
           <Main />
           <NextScript />
         </body>
