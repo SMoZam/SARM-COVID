@@ -60,7 +60,7 @@ export default mainPage;
 
 const PageContainer = styled.div`
 width: 100vw;
-background-color: #a51b1b;
+background-color: #b15201;
 overflow: hidden;
 `
 const FrameContainer = styled.div`

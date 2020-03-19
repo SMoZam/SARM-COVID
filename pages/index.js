@@ -90,6 +90,14 @@ class mainPage extends Component {
           </Section1Right>
         </Section1>
 
+
+        <Partenaires>
+          <ImagePartenaire src='/static/Partenaire1.png' alt='partenaire' />
+          <ImagePartenaire src='/static/Partenaire2.png' alt='partenaire' />
+          <ImagePartenaire src='/static/Partenaire4.png' alt='partenaire' />
+          <ImagePartenaire src='/static/Partenaire3.png' alt='partenaire' />
+        </Partenaires>
+
         <Footer></Footer>
 
       </PageContainer>
@@ -225,7 +233,7 @@ position: relative;
 const Section1Right = styled.div`
 width: 35%;
 height: 500px;
-background-color: #a51b1b;
+background-color: #b15201;
 display: flex;
 flex-direction: column;
 padding: 30px;
@@ -335,5 +343,14 @@ const Footer = styled.footer`
 width: 100%;
 height: 100px;
 background-color: #333333;
-margin-top: 200px;
 `
+
+const Partenaires = styled.div`
+width: 80%;
+margin: 0 10%;
+display: flex;
+justify-content: space-between;
+padding: 50px 0;
+`
+
+const ImagePartenaire = styled.img``
