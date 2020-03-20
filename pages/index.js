@@ -35,7 +35,7 @@ class mainPage extends Component {
       <PageContainer>
         <HeroSection>
           <TitleWrapper>
-            <Logo src='/static/SRAM-LOGO.png' alt='SRAM LOGO' />
+            <Logo src='/static/images/SRAM-LOGO.png' alt='SRAM LOGO' />
             <TitleContainer>
               <PageTitle>SARM</PageTitle>
               <PageSubtitle>Service d'aide à la répartition médicale</PageSubtitle>
@@ -53,7 +53,7 @@ class mainPage extends Component {
         <Section1>
           <Section1Left>
             <Section1TitleContainer>
-              <Section1Arrow src='/static/Arrow.png' alt='arrow' />
+              <Section1Arrow src='/static/images/Arrow.png' alt='arrow' />
               <Section1Title>Je suis volontaire </Section1Title>
             </Section1TitleContainer>
             <Section1Description>Je suis médecin, infirmier-ère, …. et je souhaite me porter volontaire pour faire face à l’épidémie  de Covid-19 :</Section1Description>
@@ -61,9 +61,9 @@ class mainPage extends Component {
             <Section1Item>- Je renseigne mes coordonnées</Section1Item>
             <Section1Item>- Je précise mes compétences </Section1Item>
             <Section1LinkContainer>
-              <Section1Link1>
+              {/* <Section1Link1>
                 <Link href="#0"><Lync1>Comment ça marche ?</Lync1></Link>
-              </Section1Link1>
+              </Section1Link1> */}
               <Section1Link1>
                 <Link href="/volontaires"><Lync2>Se porter volontaire</Lync2></Link>
               </Section1Link1>
@@ -73,16 +73,16 @@ class mainPage extends Component {
 
           <Section1Right>
             <Section1TitleContainer>
-              <Section1Arrow src='/static/Arrow.png' alt='arrow' />
+              <Section1Arrow src='/static/images/Arrow.png' alt='arrow' />
               <Section1Title>J’ai besoin de renfort  </Section1Title>
             </Section1TitleContainer>
             <Section1Description>Je suis un établissement de santé, un chef de service et je recherche des volontaires :</Section1Description>
             <Section1Item>- Je m’inscris</Section1Item>
             <Section1Item>- J’accède à la liste des volontaires</Section1Item>
             <Section1LinkContainer>
-              <Section1Link1>
+              {/* <Section1Link1>
                 <Link href="#0"><Lync1>Comment ça marche ?</Lync1></Link>
-              </Section1Link1>
+              </Section1Link1> */}
               <Section1Link1>
                 <Link href="/demandeurs"><Lync2>S'inscrire</Lync2></Link>
               </Section1Link1>
@@ -92,13 +92,15 @@ class mainPage extends Component {
 
 
         <Partenaires>
-          <ImagePartenaire src='/static/Partenaire1.png' alt='partenaire' />
-          <ImagePartenaire src='/static/Partenaire2.png' alt='partenaire' />
-          <ImagePartenaire src='/static/Partenaire4.png' alt='partenaire' />
-          <ImagePartenaire src='/static/Partenaire3.png' alt='partenaire' />
+          <ImagePartenaire src='/static/images/Partenaire1.png' alt='partenaire' />
+          <ImagePartenaire2 src='/static/images/Partenaire2.png' alt='partenaire' />
+          <ImagePartenaire3 src='/static/images/Partenaire3.png' alt='partenaire' />
+          <ImagePartenaire src='/static/images/Partenaire4.png' alt='partenaire' />
         </Partenaires>
 
-        <Footer></Footer>
+        <Footer>
+          <FooterParagraph> &copy; SARM - COVID19 Service d'aide à la répartition médicale</FooterParagraph>
+        </Footer>
 
       </PageContainer>
     );
@@ -343,7 +345,25 @@ const Footer = styled.footer`
 width: 100%;
 height: 100px;
 background-color: #333333;
+display: flex;
+justify-content: center;
+align-items: center;
 `
+
+const FooterParagraph = styled.p`
+/* width: 100%; */
+font-family: 'Roboto', sans-serif;
+font-size: 19.2px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #8c8c8c;
+`
+
+// ---------------------------------------
+
 
 const Partenaires = styled.div`
 width: 80%;
@@ -356,4 +376,16 @@ padding: 50px 0;
 }
 `
 
-const ImagePartenaire = styled.img``
+const ImagePartenaire = styled.img`
+width: 120px;
+`
+
+const ImagePartenaire2 = styled.img`
+width: 280px;
+height: auto;
+`
+
+const ImagePartenaire3 = styled.img`
+width: 300px;
+height: auto;
+`

@@ -37,7 +37,7 @@ class mainPage extends Component {
                 <HeroSection>
                     <Link href="/"><Lync style={{ textDecoration: 'none' }}>
                         <TitleWrapper>
-                            <Logo src='/static/SRAM-LOGO.png' alt='SRAM LOGO' />
+                            <Logo src='/static/images/SRAM-LOGO.png' alt='SRAM LOGO' />
                             <TitleContainer>
                                 <PageTitle>SARM</PageTitle>
                                 <PageSubtitle>Service d'aide à la répartition médicale</PageSubtitle>
@@ -61,6 +61,9 @@ class mainPage extends Component {
                     </iframe>
                 </FrameContainer>
 
+                <Footer>
+                    <FooterParagraph> &copy; SARM - COVID19 Service d'aide à la répartition médicale</FooterParagraph>
+                </Footer>
             </PageContainer>
         );
     }
@@ -141,3 +144,28 @@ letter-spacing: normal;
 color: #4a4a4a;
 margin: 0;
 `
+
+// ---------------------------------------
+
+const Footer = styled.footer`
+width: 100%;
+height: 100px;
+background-color: #333333;
+display: flex;
+justify-content: center;
+align-items: center;
+`
+
+const FooterParagraph = styled.p`
+/* width: 100%; */
+font-family: 'Roboto', sans-serif;
+font-size: 19.2px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #8c8c8c;
+`
+
+// ---------------------------------------
