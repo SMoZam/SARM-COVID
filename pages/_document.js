@@ -38,8 +38,8 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/static/favicon.ico?v=2" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="application-name" content="La Rochelle Optique" />
-          <meta name="apple-mobile-web-app-title" content="La Rochelle Optique" />
+          <meta name="application-name" content="SARM - Service d'aide à la répartition médicale" />
+          <meta name="apple-mobile-web-app-title" content="SARM - Service d'aide à la répartition médicale" />
           <meta name="theme-color" content="#f60" />
           <meta name="msapplication-navbutton-color" content="#f60" />
           <meta
